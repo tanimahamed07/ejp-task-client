@@ -1,4 +1,6 @@
+
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default async function page({ params }) {
@@ -49,9 +51,12 @@ export default async function page({ params }) {
 
             {/* Action Button */}
             <div className="card-actions justify-end mt-8">
-              <button className="btn btn-outline btn-primary w-full sm:w-auto">
-                Back to List
-              </button>
+                <Link
+                href="/shop"
+                className="btn btn-outline btn-primary w-full sm:w-auto"
+              >
+                Back to Shop ++
+              </Link>
             </div>
           </div>
         </div>
